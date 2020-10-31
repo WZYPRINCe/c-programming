@@ -14,16 +14,16 @@ Predicted prices of houses based on those weights for house with specific attrib
 
 ### Bit Operations
 
-##### First
+#### First
 
 - Set the nth value of a function
 - Set the value of the nth bit of a number to its complement
 - Return the value of the nth bit of a number
 
-##### Second
+#### Second
 
 - Return parity of a number
 
-##### Third
+#### Third
 
 - Return whether a bit string is a palindrome
