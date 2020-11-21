@@ -60,10 +60,10 @@ Predicted prices of houses based on those weights for house with specific attrib
 | jmp         | L     | Jump to L           |
 | je          | L x y | Jump to L if x = y  |
 | jne         | L x y | Jump to L if x != y |
-| je          | L x y | Jump to L if x > y  |
-| je          | L x y | Jump to L if x >= y |
-| je          | L x y | Jump to L if x < y  |
-| je          | L x y | Jump to L if x <= y |
+| jg          | L x y | Jump to L if x > y  |
+| jge         | L x y | Jump to L if x >= y |
+| jl          | L x y | Jump to L if x < y  |
+| jle         | L x y | Jump to L if x <= y |
 
 - Jumps take arguments to compare and jump to the line specified by L.
 - Note: L must be an integer.
