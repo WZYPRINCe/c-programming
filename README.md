@@ -31,7 +31,7 @@ Predicted prices of houses based on those weights for house with specific attrib
 ### Assembly Interpreter
 
 - Interpreter for a custom version of Assembly written in C.
-- There are 4 general purpose regiters: ax, bx, cx, dx
+- There are 4 general purpose registers: ax, bx, cx, dx.
 - The following functions are implemented:
 
 #### Moving Data Instructions
