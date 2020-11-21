@@ -34,6 +34,14 @@ Predicted prices of houses based on those weights for house with specific attrib
 - There are 4 general purpose regiters: ax, bx, cx, dx
 - The following functions are implemented:
 
+#### Moving Data Instructions
+
+| Instruction | Args | Description                       |
+|-------------|------|-----------------------------------|
+| mov         | x y  | Copy x to y, leaving x unchanged. |
+
+- Note: y must be a register.
+
 #### Arithmetic Instructions
 
 | Instruction | Args | Description                                           |
@@ -43,4 +51,29 @@ Predicted prices of houses based on those weights for house with specific attrib
 | mul         | x y  | Multiply x and y, place result in y                   |
 | div         | x y  | Divide x by y, place result in y (discard remainders) |
 
-- Note: y must be a register
+- Note: y must be a register.
+
+#### Jump Instructions
+
+| Instruction | Args  | Description         |
+|-------------|-------|---------------------|
+| jmp         | L     | Jump to L           |
+| je          | L x y | Jump to L if x = y  |
+| jne         | L x y | Jump to L if x != y |
+| je          | L x y | Jump to L if x > y  |
+| je          | L x y | Jump to L if x >= y |
+| je          | L x y | Jump to L if x < y  |
+| je          | L x y | Jump to L if x <= y |
+
+- Jumps take arguments to compare and jump to the line specified by L.
+- Note: L must be an integer.
+
+#### I/O Instructions
+
+| Instruction | Args | Description                                                 |
+|-------------|------|-------------------------------------------------------------|
+| read        | x    | Reads a 16-bit signed integer frod stdin and stores it in x |
+| print       | x    | Prints x to stdout                                          |
+
+- Note: x must be a register for read.
+- Note: All arguments to all instructions are separated by a single space.
